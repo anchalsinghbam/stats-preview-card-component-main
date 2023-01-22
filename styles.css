@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+}
+
+header {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  padding-top: 3.5rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+h1 > span {
+  color: hsl(277, 64%, 61%);
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-top: 1.5rem;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+h2 {
+  color: hsl(0, 0%, 100%);
+  padding-top: 3.5rem;
+  word-spacing: 4.7rem;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-size: small;
+  word-spacing: 2.7rem;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 100;
+}
+
+.light {
+  opacity: 0.8;
+}
+
+.card {
+  width: 70rem;
+  height: 25rem;
+  background-color: hsl(244, 38%, 16%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.details {
+  line-height: 1.5;
+  padding-left: 5rem;
+}
+
+.computer-img {
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(
+      rgba(170, 92, 219, 0.5),
+      rgba(170, 92, 219, 0.5)
+    ),
+    url("images/image-header-desktop.jpg");
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    display: flex;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .bottom {
+    padding: rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255, 0.5);
+    line-height: 1.2;
+  }
+
+  .card {
+    width: 20rem;
+    height: 40rem;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 10px;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+
+  .details {
+    padding-left: 0.5rem;
+    text-align: center;
+  }
+
+  .computer-img {
+    order: -1;
+    width: 20rem;
+    height: 20rem;
+    background-image: linear-gradient(
+        rgba(170, 92, 219, 0.5),
+        rgba(170, 92, 219, 0.5)
+      ),
+      url("images/image-header-desktop.jpg");
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 0;
+  }
+}
